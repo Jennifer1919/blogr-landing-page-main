@@ -1,0 +1,29 @@
+//text color
+    $lightRed : hsl(356, 100%, 66%);
+    $veryLightRed : hsl(355, 100%, 74%);
+    $veryDarkBlue : hsl(208, 49%, 24%);
+    $grayishBlue:hsl(240, 2%, 79%);
+    $veryDarkGrayishBlue:hsl(207, 13%, 34%);
+    $veryDarkBlackBlue:hsl(240, 10%, 16%);
+
+//gradient
+    $gradientLightRed:hsl(13, 100%, 72%);
+    $gradientRed:hsl(353, 100%, 62%);
+
+    $gradientGreyBlue:hsl(237, 17%, 21%);
+    $gradientDarkBlue:hsl(237, 23%, 32%);
+
+//fonts
+    $paragraphFont:'Ubuntu', sans-serif;
+    $headerFont:'Overpass', sans-serif;
+    //size : 16px
+
+//mixin
+
+    @mixin flex($direction, $wrap, $align, $justify ){
+        display:flex;
+        flex-direction: $direction;
+        flex-wrap: $wrap;
+        align-items:$align;
+        justify-content: $justify;
+    }
