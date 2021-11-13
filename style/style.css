@@ -291,27 +291,46 @@ footer ul .footer-category {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    -webkit-box-align: left;
+        -ms-flex-align: left;
+            align-items: left;
     position: static;
     z-index: 1;
-    width: 70%;
+    width: 90%;
     background-color: transparent;
     -webkit-box-shadow: none;
             box-shadow: none;
   }
   header nav .menu ul {
     border: transparent;
+    width: 90%;
   }
-  header nav .menu ul .menu-category {
+  header nav .menu ul li.menu-category {
+    margin: 0px 10px;
     display: inline;
+    color: white;
   }
-  header nav .menu ul .menu-category img {
+  header nav .menu ul li.menu-category:hover, header nav .menu ul li.menu-category:focus, header nav .menu ul li.menu-category:active {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  header nav .menu ul li.menu-category svg path {
     stroke: #FFFFFF;
   }
   header nav .menu a[href="##"] {
     width: auto;
+    color: white;
+    margin-right: 20px;
+  }
+  header nav .menu button {
+    background-image: none;
+    background-color: white;
+  }
+  header nav .menu button a {
+    color: #ff7a85;
   }
   header nav #hamburger {
     display: none;

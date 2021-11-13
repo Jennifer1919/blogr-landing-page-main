@@ -241,42 +241,66 @@ footer{
 
             .menu{
 
-                @include flex(row,nowrap,center,center);
+                @include flex(row,nowrap,center,left);
+                align-items: left;
                 position:static;
                 z-index: 1;
-                width: 70%;
+                width: 90%;
                 background-color: transparent;
                 box-shadow: none;
 
                 ul{
                     border: transparent;
+                    width: 90%;
 
-                    .menu-category{
-                        display:inline;
+                       li.menu-category{
+                            margin:0px 10px;
+                            display:inline;
+                            color:white;
 
-                        img{
-                               stroke: #FFFFFF;
-                        
+                            &:hover, &:focus, &:active{
+                                text-decoration: underline;
+                                cursor:pointer;
+                                
+                            }
+
+                            svg path{
+                                stroke: #FFFFFF;
+                            }
+                            
                         }
-
-                    }
+                   
 
                 }
                 
                
                 a[href="##"]{
                     width:auto;
+                    color: white;
+                    margin-right: 20px;
                 }
+
+                button{
+                    background-image: none;
+                    background-color: white;
+
+                    a{
+                        color:$veryLightRed ;
+    
+                     }
             
+                }   
+
+                
             }
 
             #hamburger{
                 display: none;
-            }
+                }
         }
     }
 }
 
 
-@import "./style-desktop-ver";
+//@import "./style-desktop-ver";
 
