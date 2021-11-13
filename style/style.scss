@@ -6,6 +6,7 @@
 
 @import "./variables-mixin";
 
+
 //IMAGES
 
 .desktop-image{
@@ -231,3 +232,51 @@ footer{
         
     }
 }
+
+@media only screen and (min-width:900px){
+    header{
+        
+        nav{
+            padding: 50px 40px;
+
+            .menu{
+
+                @include flex(row,nowrap,center,center);
+                position:static;
+                z-index: 1;
+                width: 70%;
+                background-color: transparent;
+                box-shadow: none;
+
+                ul{
+                    border: transparent;
+
+                    .menu-category{
+                        display:inline;
+
+                        img{
+                               stroke: #FFFFFF;
+                        
+                        }
+
+                    }
+
+                }
+                
+               
+                a[href="##"]{
+                    width:auto;
+                }
+            
+            }
+
+            #hamburger{
+                display: none;
+            }
+        }
+    }
+}
+
+
+@import "./style-desktop-ver";
+

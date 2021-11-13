@@ -273,4 +273,48 @@ footer ul .footer-category {
   margin-bottom: 10px;
   font-weight: 500;
 }
+
+@media only screen and (min-width: 900px) {
+  header nav {
+    padding: 50px 40px;
+  }
+  header nav .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: static;
+    z-index: 1;
+    width: 70%;
+    background-color: transparent;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  header nav .menu ul {
+    border: transparent;
+  }
+  header nav .menu ul .menu-category {
+    display: inline;
+  }
+  header nav .menu ul .menu-category img {
+    stroke: #FFFFFF;
+  }
+  header nav .menu a[href="##"] {
+    width: auto;
+  }
+  header nav #hamburger {
+    display: none;
+  }
+}
 /*# sourceMappingURL=style.css.map */
